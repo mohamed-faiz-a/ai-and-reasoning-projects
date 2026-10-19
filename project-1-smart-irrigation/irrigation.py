@@ -1,7 +1,6 @@
 import numpy as np
 
 states = ["Irrigation Needed", "Not Needed"]
-
 belief = np.array([0.4, 0.6])
 
 no_rain = np.array([
@@ -15,9 +14,9 @@ rain_transition = np.array([
 ])
 
 moisture_prob = {
-    "Low": [0.9, 0.1],
-    "Medium": [0.5, 0.5],
-    "High": [0.1, 0.9]
+    "Low": [0.8, 0.05],
+    "Medium": [0.15, 0.15],
+    "High": [0.05, 0.8]
 }
 
 temperature_prob = {
