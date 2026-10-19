@@ -14,20 +14,26 @@ Dynamic Bayesian Network (DBN)-style probabilistic model.
 ## Expected Output
 Irrigation probability and a watering recommendation for each day.
 
-## Sample Results
+### Sample Output
 
-| Day | Irrigation Probability | Recommendation |
-|---|---:|---|
-| 1 | 91.30% | Irrigation Needed |
-| 2 | 85.08% | Irrigation Needed |
-| 3 | 62.49% | Irrigation Needed |
+```text
+Day 1:
+Irrigation probability: 94.92%
+Recommendation: Irrigation Needed
 
-## Conclusion
-The model estimates irrigation needs using soil moisture, temperature, and rainfall observations. In this sample, the probability of irrigation being needed decreases from Day 1 to Day 3.
+Day 2:
+Irrigation probability: 86.10%
+Recommendation: Irrigation Needed
 
-## Implementation
-- Python
-- NumPy
+Day 3:
+Irrigation probability: 74.95%
+Recommendation: Irrigation Needed
+```
 
-## Note
-This is a simplified educational model with illustrative probabilities, not a validated real-world irrigation system.
+### Result Analysis
+
+The model estimates the probability of irrigation being needed using soil moisture, temperature, and rainfall information. The probability decreases over the three days, but irrigation is still recommended on each day.
+
+### Conclusion
+
+The project demonstrates a simplified Dynamic Bayesian Network (DBN)-style probabilistic model that updates irrigation predictions over time using state transitions and observed environmental conditions.
